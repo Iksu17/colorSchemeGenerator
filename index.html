@@ -1,0 +1,53 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        
+        <main>
+            <section  class="color-input-section">
+                <form id="color-form">
+                    <input type="color" id="color-picker" name="color" value="#e66465">
+                    <select name="schemes" id="scheme-select" class="scheme-select">
+                        <option value="monochrome">monochrome</option>
+                        <option value="monochrome-dark">monochrome-dark</option>
+                        <option value="monochrome-light">monochrome-light</option>
+                        <option value="analogic">analogic</option>
+                        <option value="complement">complement</option>
+                        <option value="analogic-complement">analogic-complement</option>
+                        <option value="triad">triad</option>
+                        <option value="quad">quad</option>
+                    </select>
+                    <button>Get Color Scheme</button>
+                </form>
+            </section>
+            <section class="color-section">
+                <div class="color0">
+                    <div class="color4-box" id="color4-box" ></div>
+                    <div class="color4-name" id="color4-name"></div>
+                </div>
+                <div class="color1">
+                    <div class="color0-box" id="color0-box"></div>
+                    <div class="color0-name" id="color0-name"></div>
+                </div>
+                <div class="color2">
+                    <div class="color1-box" id="color1-box"></div>
+                    <div class="color1-name" id="color1-name"></div>
+                </div>
+                <div class="color3">
+                    <div class="color2-box" id="color2-box"></div>
+                    <div class="color2-name" id="color2-name"></div>
+                </div>
+                <div class="color4">
+                    <div class="color3-box" id="color3-box"></div>
+                    <div class="color3-name" id="color3-name"></div>
+                </div>
+            </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
